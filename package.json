@@ -1,0 +1,18 @@
+{
+  "name": "ruckus-wifi-location",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:init": "node src/cli.mjs init",
+    "db:migrate-wards": "node src/migrate-wards.mjs",
+    "sync:aps": "node src/cli.mjs aps",
+    "sync:clients": "node src/cli.mjs clients",
+    "sync:sessions": "node src/cli.mjs sessions",
+    "worker": "node src/cli.mjs worker",
+    "admin": "node src/admin.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.6"
+  }
+}
